@@ -76,7 +76,7 @@ int main() {
                     }
 
                     if (regx_idx > strlen(regx))
-                        regx_idx = regx;
+                        regx_idx = regx_idx;
 
                     if (regx_idx != strlen(regx)) {
                         result = FALSE;

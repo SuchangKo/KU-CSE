@@ -38,8 +38,6 @@ int main() {
 
                 while (ptr != NULL) { // 단어단위
                     int i = 0;
-                    int q_mark_idx = 0; //?
-                    int s_mark_idx = 0; //*
                     int result = TRUE;
                     int regx_idx = 0;
 
@@ -53,7 +51,6 @@ int main() {
                             if ((regx_idx + 1) == strlen(regx)) { //last regx
                                 regx_idx++;
                                 break;
-                                //continue;
                             } else {
                                 result = FALSE;
                                 if (regx[regx_idx + 1] == ptr[i]) {
@@ -75,9 +72,6 @@ int main() {
                             }
                         }
                     }
-
-                    if (regx_idx > strlen(regx))
-                        regx_idx = regx_idx;
 
                     if (regx_idx != strlen(regx)) {
                         result = FALSE;

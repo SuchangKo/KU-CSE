@@ -43,7 +43,7 @@ int main() {
                     int result = TRUE;
                     int regx_idx = 0;
 
-                    for (i = 0; i < strlen(ptr); i++) {
+                    for (i = 0; i < strlen(ptr)+1; i++) {
                         if (regx[regx_idx] == '?') {
                             regx_idx++;
                             continue;
@@ -58,12 +58,13 @@ int main() {
                                 result = FALSE;
                                 if (regx[regx_idx + 1] == ptr[i]) {
                                     regx_idx++;
+                                    result = TRUE;
                                 }
                             }
 
                         }
 
-                        if (regx[regx_idx] != '?' && regx[regx_idx] != '*') {
+                        if (regx[regx_idx] != '?' && regx[regx_idx] != '*' && i < strlen(ptr)) {
 
                             if (regx[regx_idx] == ptr[i]) {
                                 result = TRUE;

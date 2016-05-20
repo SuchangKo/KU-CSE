@@ -1,0 +1,2 @@
+Verification of programmable logic controller (PLC) programs written in IEC 61131-3 function block diagram (FBD) is essential in the transition from the use of traditional relay-based analog systems to PLC-based digital systems. This paper describes
+effective use of the well-known verification tool VIS for automatic verification of behavioral equivalences between successive releases. and andd anddd anddd andddd anddddd anddddd va vava vavavav vavavavva vavavava vavavavava vavavavsvs vdvdvsd dvdvd vdv vd vdvd vdvdv 
